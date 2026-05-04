@@ -14,8 +14,8 @@ const client = new Client({
 });
 
 // جاهزية البوت
-client.once('ready', () => {
-  console.log(`✅ البوت شغال ${client.user.tag}`);
+client.once('clientReady', () => {
+  console.log(`✅ البوت شغال: ${client.user.tag}`);
 });
 
 // الترحيب عند دخول عضو
